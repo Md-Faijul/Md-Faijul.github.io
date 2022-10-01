@@ -1,0 +1,36 @@
+.footer {
+}
+
+.care {
+}
+.titleCare {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(131, 131, 131);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topicF {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(131, 131, 131);
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+}
+
+.follow {
+  margin-right: 20px;
+  // display: flex;
+  .printall {
+    display: flex;
+    margin-top: 50px;
+
+    .topicF {
+      img {
+        cursor: pointer;
+        width: 50px;
+        height: 35px;
+        border-radius: 25px;
+        margin: 10px;
+      }
+    }
+  }
+}

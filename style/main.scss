@@ -1,0 +1,48 @@
+@import "heder";
+@import "variable";
+@import "globle";
+@import "landing-page";
+@import "produc-page";
+@import "footer";
+@import "email";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  ::selection {
+    color: white;
+    background: #000;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 600px auto auto;
+  grid-template-areas:
+    "header"
+    "landing-page"
+    "produc-page"
+    "footer";
+}
+.header {
+  grid-area: header;
+}
+.landing-page {
+  grid-area: landing-page;
+}
+.produc-page {
+  grid-area: produc-page;
+  background: rgb(226, 226, 226);
+  padding: 50px;
+  display: flex;
+
+  height: auto;
+}
+.footer {
+  grid-area: footer;
+  background: rgb(46, 46, 46);
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
